@@ -13,7 +13,7 @@ header{
     color: #f25151;
     font-weight: bold;
     font-family: 'Pokemon Solid', sans-serif;
-    padding: 20px                                               
+    padding: 50px                                               
 }
 
 
@@ -22,6 +22,12 @@ main{
     display: flex;
 }
 
+/*
+.seccion-ingreso-mensaje, .seccion-mensaje-listo{
+    width: 1000px;
+    margin: 0 auto;
+    
+} */
 
 /*Espacio para escribir el texto a encriptar o desencriptar*/
 
@@ -32,7 +38,7 @@ main{
     text-align: center;
     color: white;
     background: #3a71c3;
-    margin-left: 25%;
+    margin-left: 35%;
     width: 800px;
     height: 700px;
     border-radius:15px;
@@ -140,7 +146,7 @@ main{
     border: 3px solid #003060;
     border-radius: 40px;
     box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.6);
-    margin-left: 75%;
+    margin-left: 90%;
 
 }
 
@@ -168,7 +174,7 @@ main{
     border: none;
     border-radius: 15px;
     margin-top: 2%;
-    margin-left: 50%;
+    margin-left: 65%;
     padding-top: 18%;
     position: relative;
     pointer-events: none;
@@ -185,27 +191,43 @@ footer{
     padding: 1%;
 }
 
-
 /*Haciendo responsivo el sitio*/
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) { /*de 0px a 500px*/
 
-    header{
-        max-width: 60%;
+    header, h1{
+        font-size: 20px;
+        text-align: center;
+        padding: 2%;
+        margin-right: 10%;
     }
 
     body{
-        max-width: 100%;
+        max-width: 470px ;
+        max-height: 650px ;
     }
 
     main{
-        display: inline-block;
+        display: inline;
+        max-height: 700px;
+        max-width: 470px;
     }
 
+    #texto-indicativo{
+        font-size: 10px;
+    }
+
+    .botones{
+        margin-top: 0px;
+ 
+    }
+
+
     .ingresa-texto{
+        margin-top: 0;
         margin-left: 0px;
-        max-width: 60%;
-        max-height: 40%;
+        max-width: 65%;
+        max-height: 90%;
     }
 
     h3{
@@ -215,28 +237,65 @@ footer{
 
 
     .seccion-mensaje-listo{
-        width: 2px ;
-        height: 2px ;
+        margin-top: 0px;
+        width: 500px;
+        height: 300px ;
+        top: 1px;
+   
+    }
+
+    .texto-inicial{
+        width: 300px;
+        height: 200px;
+        font-size: 15px;
     }
 
     .seccion-ingreso-mensaje{
-        height: auto;
-        width: auto;
+        height: 280px;
+        width: 550px;
         margin-bottom: 4%;
+
     }
 
 
     .mensaje-copiado{
+        width: 350px;
+        height: 175px;
         margin-left: 1px;
         padding-top: 10%;
         vertical-align:bottom;
-        background-position: -1.3em 55%;
+        background-position: 5em 5%;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        font-size: 15px;
     }
 
     .boton-copiar{
-        padding-top: 1%;
+        
+        line-height: 1.5em;
+        font-size: 10px;
+        margin-left: 20%;
     }
+
+    .boton-encriptado{
+        
+        line-height: 1.5em;
+        font-size: 10px;
+        padding: 0 0;
+
+    }
+
+    .boton-desencriptado{
     
- 
+        line-height: 1.5em;
+        font-size: 10px;
+    }
+
+
+    footer, h3{
+        display: inline;
+        max-width: 100px;
+        max-height: 100px;
+    }
 
 }

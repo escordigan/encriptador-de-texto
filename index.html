@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<link rel="stylesheet" href="reset.css"
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/depixel" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/falling-sky" rel="stylesheet">
+                             
+                
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Encriptador de Texto</h1>           
+           
+        </header>
+
+        <main>
+
+            <section class="seccion-ingreso-mensaje">
+
+                <div class="ingresa-texto">
+
+
+                    <p id="texto-indicativo">Ingrese el texto aquí</p>
+                    
+                    
+                    <div class="contenedor-primer-ingreso">
+
+                        <textarea class="texto-inicial" cols="63" rows="17"></textarea>
+
+                    </div>
+                   
+
+                    <div class="botones">
+
+                        <button onclick="botonEncriptar();" class="boton-encriptado">Encriptar</button>
+
+
+                        <button onclick="botonDesencriptar();" class="boton-desencriptado">Desencriptar</button>
+
+
+                    </div>
+
+
+            </section>
+           
+
+            <section class="seccion-mensaje-listo">
+               
+                <div>
+
+                    
+                    <textarea class="mensaje-copiado" id="copia" cols="40" rows="18"></textarea>
+
+                    
+                    <button onclick="copiarMensaje();" class="boton-copiar">Copiar</button>
+                                                       
+                                        
+                </div>
+
+
+            </section>
+
+            
+        </main>
+
+        <footer>
+
+            <h3>© Elena Vargas Méndez - 2024</h3>
+                  
+        </footer>
+
+        <script src="app.js"></script>
+    
+
+    </body>
+
+</html>
+
